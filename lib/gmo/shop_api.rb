@@ -494,7 +494,6 @@ module GMO
         post_request name, options
       end
       
-      #cvs支払いキャンセル
       def cvs_cancel(options = {})
         name = "CvsCancel.idPass"
         required = [:access_id, :access_pass, :order_id]
@@ -502,7 +501,6 @@ module GMO
         post_request name, options
       end
 
-　　　 #pay_easy支払いキャンセル
       def pay_easy_cancel(options = {})
         name = "PayEasyCancel.idPass"
         required = [:access_id, :access_pass, :order_id]
@@ -510,7 +508,6 @@ module GMO
         post_request name, options
       end
 
-　　　　#あおぞら銀行バーチャル口座支払いキャンセル
       def aozora_bank_cancel(options = {})
         name = "CancelTranGANB.idPass"
         required = [:access_id, :access_pass, :order_id]
