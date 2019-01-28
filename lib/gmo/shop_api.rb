@@ -493,6 +493,27 @@ module GMO
         assert_required_options(required, options)
         post_request name, options
       end
+      
+      def cvs_cancel(options = {})
+        name = "CvsCancel.idPass"
+        required = [:access_id, :access_pass, :order_id]
+        assert_required_options(required, options)
+        post_request name, options
+      end
+
+      def pay_easy_cancel(options = {})
+        name = "PayEasyCancel.idPass"
+        required = [:access_id, :access_pass, :order_id]
+        assert_required_options(required, options)
+        post_request name, options
+      end
+
+      def aozora_bank_cancel(options = {})
+        name = "CancelTranGANB.idPass"
+        required = [:access_id, :access_pass, :order_id]
+        assert_required_options(required, options)
+        post_request name, options
+      end
 
       private
 
