@@ -13,6 +13,7 @@ module GMO
     }.freeze
 
     INPUT_PARAMS = {
+      :account_holder_optional_name => "AccountHolderOptionalName",
       :access_id             => "AccessID",
       :access_pass           => "AccessPass",
       :account_name          => "Account_Name",
